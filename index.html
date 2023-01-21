@@ -19,33 +19,77 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body class="bg-[#FAFAFA]">
-    <header class="container mx-auto px-5 py-5 flex lg:px-10 justify-between">
+<body class="bg-[#FAFAFA] text-black-mamba">
+    <header
+        class="container w-full mx-auto px-5 py-3 flex lg:px-10 lg:py-5 justify-between items-center fixed top-0 z-50">
         <div>
-            <img src="./assets/images/LOGO.png" alt="Rentind Academy">
+            <a href="#"><img src="./assets/images/logo.png" alt="Rentind Academy" class="h-6 lg:h-11"></a>
         </div>
-        <div class="hidden lg:block bg-white px-3 py-2 rounded-md items-center">
-            <select name="" id="" class="outline-none mr-3 font-medium">
+        <div class="hidden lg:block bg-white px-5 py-2 rounded-md lg:py-4 lg:rounded-full">
+            <select name="" id="" class="outline-none mr-5 font-medium">
                 <option value="">All Categories</option>
             </select>
-            <input type="text" placeholder='Try typing "spinach"' class="outline-none border-l-2 border-[#E6E6E6] pl-3">
-            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Try typing “spinach”" class="outline-none border-l-2 border-[#E6E6E6] pl-3">
+            <i class='bx bx-search text-xl text-[#9ca3af]'></i>
         </div>
         <nav>
-            <div class="hidden md:block ">
-                <ul class="flex gap-x-8">
+            <div class="absolute left-[50%] translate-x-[-50%] text-center shadow-md w-4/5 p-5 rounded-2xl transition duration-300 ease-in-out md:static md:text-left md:shadow-none md:w-fit md:p-0 md:translate-x-0 bg-white md:bg-[#FAFAFA] top-[-1000%]"
+                id="nav-menu">
+                <ul class="flex gap-x-8 flex-col gap-y-4 md:flex-row font-medium lg:font-semibold">
                     <li><a href="#">Explore</a></li>
                     <li><a href="#">Rents</a></li>
                     <li><a href="#">Sales</a></li>
                     <li><a href="#">How it work</a></li>
                     <li><a href="#" class="bg-gray-200 px-5 py-2 rounded-full">Contact Us</a></li>
-                </ul>   
+                </ul>
             </div>
-            <div class="hover:cursor-pointer md:hidden">
-                <i class='bx bx-menu text-lg'></i>
+            <div class="hover:cursor-pointer md:hidden" id="nav-toggle">
+                <i class='bx bx-menu text-2xl'></i>
             </div>
         </nav>
-    </header>  
+    </header>
+
+    <main class="mt-20 lg:mt-14">
+        <section class="px-5 lg:h-[90vh]">
+            <div class="w-full relative lg:flex items-center lg:h-[100%] justify-center gap-x-40">
+                <div class="lg:relative">
+                    <img src="assets/images/explore.png" alt=""
+                        class="w-full sm:max-h-96 lg:w-auto rounded-tl-2xl rounded-tr-2xl md:rounded-2xl">
+                    <div
+                        class="hidden lg:flex lg:items-center gap-x-3 bg-white absolute top-8 left-[-20%] px-2 py-3 rounded-md shadow-sm">
+                        <span class="bg-gray-200 px-[8px] pt-2 pb-1 rounded-md">
+                            <i class='bx bxs-check-shield text-lg text-black'></i>
+                        </span>
+                        <p class="font-medium">Trusted Platform</p>
+                    </div>
+                    <div
+                        class="hidden lg:block lg:text-center bg-white absolute bottom-8 right-[-17%] px-5 py-6 rounded-lg shadow-sm">
+                        <span class="inline-block mx-auto bg-gray-200 p-2 rounded-full">
+                            <img src="assets/images/filled.svg" alt="" class="h-7">
+                        </span>
+                        <p class="font-semibold text-lg">22.000+</p>
+                        <p class="lg:text-[#697586]">Happy Client</p>
+                    </div>
+                </div>
+                <div
+                    class="absolute inset-0 flex items-center justify-center lg:items-start flex-col text-white gap-y-6 lg:static lg:text-black-mamba">
+                    <h1 class="font-bold text-center text-3xl leading-normal lg:text-left lg:text-5xl lg:leading-[1.35]">Let's Find Your <br> Comfortable And <br> Safe Place To Live</h1>
+                    <p class="hidden lg:block lg:leading-[1.65] lg:text-[#697586]">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500s.</p>
+                    <div class="flex flex-col items-center lg:flex-row lg:gap-x-6">
+                        <a href="#"
+                            class="bg-white text-black-mamba shadow-sm shadow-white lg:bg-black-mamba lg:text-white px-5 py-3 rounded-md font-bold lg:font-semibold">Explore
+                            Now</a>
+                        <a href="#" class="group pt-8 lg:pt-0 item-center font-medium lg:font-semibold">Learn
+                            More <i
+                                class='bx bx-right-arrow-alt text-lg align-middle transition duration-300 ease-in-out group-hover:translate-x-[5px] '></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
