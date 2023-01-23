@@ -20,8 +20,8 @@
 </head>
 
 <body class="bg-[#FAFAFA] text-black-mamba">
-    <header
-        class="container w-full mx-auto px-5 py-3 flex lg:px-10 lg:py-5 justify-between items-center fixed top-0 z-50">
+    <!-- HEADER -->
+    <header class="container w-full mx-auto px-5 py-3 flex lg:px-10 lg:py-5 justify-between items-center relative top-0 z-50">
         <div>
             <a href="#"><img src="./assets/images/logo.png" alt="Rentind Academy" class="h-6 lg:h-11"></a>
         </div>
@@ -33,7 +33,7 @@
             <i class='bx bx-search text-xl text-[#9ca3af]'></i>
         </div>
         <nav>
-            <div class="absolute left-[50%] translate-x-[-50%] text-center shadow-md w-4/5 p-5 rounded-2xl transition duration-300 ease-in-out md:static md:text-left md:shadow-none md:w-fit md:p-0 md:translate-x-0 bg-white md:bg-[#FAFAFA] top-[-1000%]"
+            <div class="absolute z-30 left-[50%] translate-x-[-50%] text-center shadow-md w-4/5 p-5 rounded-2xl transition duration-300 ease-in-out md:static md:text-left md:shadow-none md:w-fit md:p-0 md:translate-x-0 bg-white md:bg-[#FAFAFA] top-[-1000%]"
                 id="nav-menu">
                 <ul class="flex gap-x-8 flex-col gap-y-4 md:flex-row font-medium lg:font-semibold">
                     <li><a href="#">Explore</a></li>
@@ -49,8 +49,10 @@
         </nav>
     </header>
 
-    <main class="mt-20 lg:mt-14">
-        <section class="px-5 lg:h-[90vh]">
+    <!-- MAIN -->
+    <main class="container mx-auto mt-8 lg:-mt-20">
+        <!-- HOME -->
+        <section class="container px-5 lg:h-[90vh]">
             <div class="w-full relative lg:flex items-center lg:h-[100%] justify-center gap-x-40">
                 <div class="lg:relative">
                     <img src="assets/images/explore.png" alt=""
@@ -71,17 +73,101 @@
                         <p class="lg:text-[#697586]">Happy Client</p>
                     </div>
                 </div>
-                <div
-                    class="absolute inset-0 flex items-center justify-center lg:items-start flex-col text-white gap-y-6 lg:static lg:text-black-mamba">
+                <div class="absolute inset-0 flex items-center justify-center lg:items-start flex-col text-white gap-y-6 lg:static lg:text-black-mamba">
                     <h1 class="font-bold text-center text-3xl leading-normal lg:text-left lg:text-5xl lg:leading-[1.35]">Let's Find Your <br> Comfortable And <br> Safe Place To Live</h1>
                     <p class="hidden lg:block lg:leading-[1.65] lg:text-[#697586]">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500s.</p>
                     <div class="flex flex-col items-center lg:flex-row lg:gap-x-6">
                         <a href="#"
                             class="bg-white text-black-mamba shadow-sm shadow-white lg:bg-black-mamba lg:text-white px-5 py-3 rounded-md font-bold lg:font-semibold">Explore
                             Now</a>
-                        <a href="#" class="group pt-8 lg:pt-0 item-center font-medium lg:font-semibold">Learn
+                        <a href="#" class="group mt-8 lg:mt-0 lg:pt-0 font-medium lg:font-semibold">Learn
                             More <i
                                 class='bx bx-right-arrow-alt text-lg align-middle transition duration-300 ease-in-out group-hover:translate-x-[5px] '></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR -->
+        <section class="container mt-8 lg:-mt-6">
+            <div class="lg:flex lg:justify-between lg:px-12">
+                <h2 class="text-center text-black-z text-xl font-semibold lg:text-4xl">Most Popular Apartements</h2>
+                <div class="flex justify-center pt-5 lg:pt-0">
+                    <div class="bg-white drop-shadow-xl rounded-md px-2 py-1 mr-5 flex items-center lg:drop-shadow-none lg:px-4 lg:py-2">
+                        <img src="./assets/images/icon.png" alt="" class="h-4 pr-1">
+                        <select name="" id="" class="font-medium text-xs lg:text-lg lg:font-semibold">
+                            <option value="">Bandung</option>
+                            <option value="">Jakarta</option>
+                            <option value="">Makassar</option>
+                        </select>
+                    </div>
+                    <a href="#" class="bg-black-mamba px-3 py-2 text-white font-normal text-xs rounded-md lg:font-medium lg:text-lg lg:px-6 lg:py-2">See more</a>
+                </div>
+            </div>
+            <div class="container mx-auto bg-black-mamba h-auto lg:h-[1000px] w-full mt-10 lg:mt-72 lg:px-12">
+                <div class="flex flex-col items-center lg:justify-between lg:flex-row lg:relative lg:-top-[25%]">
+                    <div class="relative bg-white w-[75%] h-auto rounded-lg mt-10 lg:w-[40%] lg:mx-2">
+                        <img src="./assets/images/Apartment A.png" alt="Haven Cubby Apartement" class="pt-4 px-5">
+                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]">
+                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        </div>
+                        <div class="flex pt-2 pl-6 lg:pt-3">
+                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
+                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                        </div>
+                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Haven Cubby Apartement</h3>
+                        <div class="flex pl-5 lg:py-1">
+                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
+                            <p class="text-xs font-medium lg:text-base">Setia Budi</p>
+                        </div>
+                        <div class="flex justify-center pt-3 pb-5">
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                        </div>
+                    </div>
+                    <div class="relative bg-white w-3/4 h-auto rounded-lg mt-10 lg:w-[40%] lg:mx-2">
+                        <img src="./assets/images/Apartment B.png" alt="Baznai Tower Apartements" class="pt-4 px-5">
+                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]"">
+                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        </div>
+                        <div class="flex pt-2 pl-6 lg:pt-3">
+                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
+                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                        </div>
+                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Baznai Tower Apartements</h3>
+                        <div class="flex pl-5 lg:py-1">
+                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
+                            <p class="text-xs font-medium lg:text-base">Sudirman</p>
+                        </div>
+                        <div class="flex justify-center pt-3 pb-5">
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                        </div>
+                    </div>
+                    <div class="relative bg-white w-3/4 h-auto rounded-lg mt-10 mb-10 lg:mb-0 lg:w-[40%] lg:mx-2">
+                        <img src="./assets/images/Apartment C.png" alt="Luxville Modern Apartements" class="pt-4 px-5">
+                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]"">
+                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        </div>
+                        <div class="flex pt-2 pl-6 lg:pt-3">
+                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
+                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                        </div>
+                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Luxville Modern Apartements</h3>
+                        <div class="flex pl-5 lg:py-1">
+                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
+                            <p class="text-xs font-medium lg:text-base">Bundaran HI</p>
+                        </div>
+                        <div class="flex justify-center pt-3 pb-5">
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
