@@ -50,9 +50,9 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container mx-auto mt-8 lg:-mt-20">
+    <main class="container mx-auto mt-8 lg:mt-14">
         <!-- HOME -->
-        <section class="container px-5 lg:h-[90vh]">
+        <section class="container px-5">
             <div class="w-full relative lg:flex items-center lg:h-[100%] justify-center gap-x-40">
                 <div class="lg:relative">
                     <img src="assets/images/explore.png" alt=""
@@ -89,9 +89,9 @@
         </section>
 
         <!-- POPULAR -->
-        <section class="container mt-8 lg:-mt-6">
+        <section class="container mt-8 lg:mt-28">
             <div class="lg:flex lg:justify-between lg:px-12">
-                <h2 class="text-center text-black-z text-xl font-semibold lg:text-4xl">Most Popular Apartements</h2>
+                <h2 class="text-center text-xl font-semibold lg:text-3xl xl:text-4xl">Most Popular Apartements</h2>
                 <div class="flex justify-center pt-5 lg:pt-0">
                     <div class="bg-white drop-shadow-xl rounded-md px-2 py-1 mr-5 flex items-center lg:drop-shadow-none lg:px-4 lg:py-2">
                         <img src="./assets/images/icon.png" alt="" class="h-4 pr-1">
@@ -104,73 +104,120 @@
                     <a href="#" class="bg-black-mamba px-3 py-2 text-white font-normal text-xs rounded-md lg:font-medium lg:text-lg lg:px-6 lg:py-2">See more</a>
                 </div>
             </div>
-            <div class="container mx-auto bg-black-mamba h-auto lg:h-[1000px] w-full mt-10 lg:mt-72 lg:px-12">
-                <div class="flex flex-col items-center lg:justify-between lg:flex-row lg:relative lg:-top-[25%]">
+            <div class="container relative bg-black-mamba h-auto lg:h-[280px] xl:h-[360px] 2xl:h-[400px] mt-10 lg:px-12 lg:mt-52 xl:mt-56 2xl:mt-64">
+                <div class="flex flex-col items-center lg:justify-between lg:flex-row lg:relative lg:-top-52 xl:-top-56 2xl:-top-64">
                     <div class="relative bg-white w-[75%] h-auto rounded-lg mt-10 lg:w-[40%] lg:mx-2">
-                        <img src="./assets/images/Apartment A.png" alt="Haven Cubby Apartement" class="pt-4 px-5">
-                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
-                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]">
-                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        <img src="./assets/images/popular/Apartment A.png" alt="Haven Cubby Apartement" class="pt-4 px-5">
+                        <div class=" bg-black-mamba flex items-center gap-x-2 absolute top-[3%] px-5 py-[10px] rounded-md rounded-bl-none lg:px-4 lg:py-[8px] sm:top-[6%] after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:border-[11px] after:border-solid after:border-b-transparent after:border-l-transparent after:border-black-mamba after:top-[100%] after:-left-[1%] lg:after:border-[10px] lg:after:left-0">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] sm:h-[16px] xl:h-[18px]">
+                            <p class="text-white text-xs font-medium sm:font-normal sm:text-base xl:text-lg 2xl:text-xl">Popular</p>
                         </div>
                         <div class="flex pt-2 pl-6 lg:pt-3">
-                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
-                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
-                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                            <i class='bx bxs-star text-sm pr-1 sm:text-lg text-[#ffb52d]'  ></i>
+                            <p class="text-xs font-semibold pr-1 sm:text-sm 2xl:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] sm:text-sm 2xl:text-base">(22 Review) &#8226 1000 units</p>
                         </div>
-                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Haven Cubby Apartement</h3>
+                        <h3 class="text-base font-semibold pl-5 sm:text-lg xl:text-xl 2xl:text-2xl">Haven Cubby Apartement</h3>
                         <div class="flex pl-5 lg:py-1">
-                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
-                            <p class="text-xs font-medium lg:text-base">Setia Budi</p>
+                            <i class='bx bxs-map pr-1 text-sm sm:text-lg 2xl:text-xl' undefined ></i>
+                            <p class="text-xs font-medium sm:text-sm 2xl:text-base">Setia Budi</p>
                         </div>
                         <div class="flex justify-center pt-3 pb-5">
-                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
-                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md sm:text-sm sm:px-5 sm:py-3 sm:mr-7 lg:mr-4 xl:text-base xl:px-7 2xl:text-lg 2xl:px-9">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md sm:text-sm sm:px-7 sm:py-3 xl:text-base xl:px-8 2xl:text-lg 2xl:px-10">Rent Now</a>
                         </div>
                     </div>
                     <div class="relative bg-white w-3/4 h-auto rounded-lg mt-10 lg:w-[40%] lg:mx-2">
-                        <img src="./assets/images/Apartment B.png" alt="Baznai Tower Apartements" class="pt-4 px-5">
-                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
-                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]"">
-                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        <img src="./assets/images/popular/Apartment B.png" alt="Baznai Tower Apartements" class="pt-4 px-5">
+                        <div class=" bg-black-mamba flex items-center gap-x-2 absolute top-[3%] px-5 py-[10px] rounded-md rounded-bl-none lg:px-4 lg:py-[8px] sm:top-[6%] after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:border-[11px] after:border-solid after:border-b-transparent after:border-l-transparent after:border-black-mamba after:top-[100%] after:-left-[1%] lg:after:border-[10px] lg:after:left-0">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] sm:h-[16px] xl:h-[18px]">
+                            <p class="text-white text-xs font-medium sm:font-normal sm:text-base xl:text-lg 2xl:text-xl">Popular</p>
                         </div>
                         <div class="flex pt-2 pl-6 lg:pt-3">
-                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
-                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
-                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                            <i class='bx bxs-star text-sm pr-1 sm:text-lg text-[#ffb52d]'  ></i>
+                            <p class="text-xs font-semibold pr-1 sm:text-sm 2xl:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] sm:text-sm 2xl:text-base">(22 Review) &#8226 1000 units</p>
                         </div>
-                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Baznai Tower Apartements</h3>
+                        <h3 class="text-base font-semibold pl-5 sm:text-lg xl:text-xl 2xl:text-2xl">Haven Cubby Apartement</h3>
                         <div class="flex pl-5 lg:py-1">
-                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
-                            <p class="text-xs font-medium lg:text-base">Sudirman</p>
+                            <i class='bx bxs-map pr-1 text-sm sm:text-lg 2xl:text-xl' undefined ></i>
+                            <p class="text-xs font-medium sm:text-sm 2xl:text-base">Setia Budi</p>
                         </div>
                         <div class="flex justify-center pt-3 pb-5">
-                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
-                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md sm:text-sm sm:px-5 sm:py-3 sm:mr-7 lg:mr-4 xl:text-base xl:px-7 2xl:text-lg 2xl:px-9">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md sm:text-sm sm:px-7 sm:py-3 xl:text-base xl:px-8 2xl:text-lg 2xl:px-10">Rent Now</a>
                         </div>
                     </div>
                     <div class="relative bg-white w-3/4 h-auto rounded-lg mt-10 mb-10 lg:mb-0 lg:w-[40%] lg:mx-2">
-                        <img src="./assets/images/Apartment C.png" alt="Luxville Modern Apartements" class="pt-4 px-5">
-                        <div class="flex items-center gap-x-2 bg-black-mamba absolute w-auto top-[3%] px-5 py-[10px] rounded-md rounded-bl-none after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:-bottom-[21px] after:-left-[23px] after:border-[22px] after:border-solid after:border-transparent after:border-t-0 after:border-r-black-mamba lg:top-[6%] lg:after:border-[20.7px] lg:after:-bottom-[20px] lg:after:-left-[20px]">
-                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] lg:h-[18px]"">
-                            <p class="text-white text-xs font-medium lg:font-normal lg:text-xl">Popular</p>
+                        <img src="./assets/images/popular/Apartment C.png" alt="Luxville Modern Apartements" class="pt-4 px-5">
+                        <div class=" bg-black-mamba flex items-center gap-x-2 absolute top-[3%] px-5 py-[10px] rounded-md rounded-bl-none lg:px-4 lg:py-[8px] sm:top-[6%] after:content-[''] after:bg-transparent after:w-5 after:h-5 after:absolute after:border-[11px] after:border-solid after:border-b-transparent after:border-l-transparent after:border-black-mamba after:top-[100%] after:-left-[1%] lg:after:border-[10px] lg:after:left-0">
+                            <img src="./assets/images/Path.svg" alt="" class="h-[14px] sm:h-[16px] xl:h-[18px]">
+                            <p class="text-white text-xs font-medium sm:font-normal sm:text-base xl:text-lg 2xl:text-xl">Popular</p>
                         </div>
                         <div class="flex pt-2 pl-6 lg:pt-3">
-                            <i class='bx bxs-star text-sm pr-1 lg:text-lg' style='color:#ffb52d' ></i>
-                            <p class="text-xs font-semibold pr-1 lg:text-base">4.9</p>
-                            <p class="text-xs text-[#697586] lg:text-base">(22 Review) &#8226 1000 units</p>
+                            <i class='bx bxs-star text-sm pr-1 sm:text-lg text-[#ffb52d]'  ></i>
+                            <p class="text-xs font-semibold pr-1 sm:text-sm 2xl:text-base">4.9</p>
+                            <p class="text-xs text-[#697586] sm:text-sm 2xl:text-base">(22 Review) &#8226 1000 units</p>
                         </div>
-                        <h3 class="text-base font-semibold pl-5 lg:text-2xl">Luxville Modern Apartements</h3>
+                        <h3 class="text-base font-semibold pl-5 sm:text-lg xl:text-xl 2xl:text-2xl">Haven Cubby Apartement</h3>
                         <div class="flex pl-5 lg:py-1">
-                            <i class='bx bxs-map pr-1 text-sm lg:text-xl' undefined ></i>
-                            <p class="text-xs font-medium lg:text-base">Bundaran HI</p>
+                            <i class='bx bxs-map pr-1 text-sm sm:text-lg 2xl:text-xl' undefined ></i>
+                            <p class="text-xs font-medium sm:text-sm 2xl:text-base">Setia Budi</p>
                         </div>
                         <div class="flex justify-center pt-3 pb-5">
-                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md lg:text-lg lg:px-10 lg:py-3 lg:mr-4">Click Details</a>
-                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md lg:text-lg lg:px-11 lg:py-3">Rent Now</a>
+                            <a href="#" class="bg-[#F3F3F3] px-7 py-2 mr-2 text-black-mamba font-medium text-xs rounded-md sm:text-sm sm:px-5 sm:py-3 sm:mr-7 lg:mr-4 xl:text-base xl:px-7 2xl:text-lg 2xl:px-9">Click Details</a>
+                            <a href="#" class="bg-black-mamba px-8 py-2 text-white font-medium text-xs rounded-md sm:text-sm sm:px-7 sm:py-3 xl:text-base xl:px-8 2xl:text-lg 2xl:px-10">Rent Now</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- OFFER -->
+        <section class="container mx-auto mt-8 px-5 py-5 lg:-px-0 lg:py-0 lg:mt-0 lg:bg-black-mamba">
+            <p class="font-medium text-sm px-10 py-1 lg:hidden">Exclusive Offer From Us For You <br> To Have Your Dream Home </p>
+            <p class="hidden lg:block lg:font-medium lg:text-base lg:text-white lg:pt-5 lg:pb-3 lg:text-center">Exclusive Offer From Us For You To Have Your Dream Home </p>
+            <h2 class="text-black-mamba text-xl font-bold px-10 lg:text-white lg:text-center lg:text-3xl lg:font-semibold">We Provide The Best Experience For Your Residence </h2>
+            <div class="grid grid-cols-1 gap-6 py-5 place-items-center lg:grid-row-3 lg:grid-cols-3 lg:gap-8 lg:grid-flow-col lg:place-items-start lg:px-8 lg:py-10">
+                <div class="relative lg:w-full lg:row-span-3">
+                    <img src="./assets/images/offer/offer-jakarta.png" alt="" class="rounded-xl shadow-lg lg:hidden">
+                    <img src="./assets/images/offer/offer-jakarta2.png" alt="" class="hidden lg:block rounded-xl w-[100%] h-auto">
+                    <div class="absolute bottom-5 left-4">
+                        <h3 class="text-[#f4f4f4] font-semibold text-base">Jakarta</h3>
+                        <p class="text-xs text-[#c5c5c5] font-medium">560+ Total Unit</p>
+                    </div>
+                </div>
+                <div class="relative lg:w-full lg:row-span-2">
+                    <img src="./assets/images/offer/offer-bandung.png" alt="" class="rounded-xl shadow-lg lg:hidden">
+                    <img src="./assets/images/offer/offer-bandung2.png" alt="" class="hidden lg:inline rounded-xl w-[100%] h-auto">
+                    <div class="absolute bottom-5 left-4">
+                        <h3 class="text-[#f4f4f4] font-semibold text-base">Bandung</h3>
+                        <p class="text-xs text-[#c5c5c5] font-medium">120+ Total Unit</p>
+                    </div>
+                </div>
+                <div class="hidden relative lg:inline lg:w-full lg:row-span-1">
+                    <img src="./assets/images/offer/offer-surabaya.png" alt="" class="rounded-xl w-[100%] h-auto">
+                    <div class="absolute bottom-5 left-4">
+                        <h3 class="text-[#f4f4f4] font-semibold text-base">Surabaya</h3>
+                        <p class="text-xs text-[#c5c5c5] font-medium">90+ Total Unit</p>
+                    </div>
+                </div>
+                <div class="hidden relative lg:inline lg:w-full lg:row-span-1">
+                    <img src="./assets/images/offer/offer-medan.png" alt="" class="rounded-xl w-[100%] h-auto">
+                    <div class="absolute bottom-5 left-4">
+                        <h3 class="text-[#f4f4f4] font-semibold text-base">Medan</h3>
+                        <p class="text-xs text-[#c5c5c5] font-medium">24+ Total Unit</p>
+                    </div>
+                </div>
+                <div class="hidden relative lg:inline lg:w-full lg:row-span-2">
+                    <img src="./assets/images/offer/offer-bali.png" alt="" class="rounded-xl w-[100%] h-auto">
+                    <div class="absolute bottom-5 left-4">
+                        <h3 class="text-[#f4f4f4] font-semibold text-base">Bali Island</h3>
+                        <p class="text-xs text-[#c5c5c5] font-medium">60+ Total Unit</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="bg-black-mamba px-4 py-3 text-white font-medium text-lg rounded-lg w-fit block mx-auto lg:hidden">Show more</a>
         </section>
     </main>
 
