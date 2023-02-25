@@ -1,9 +1,14 @@
-// TOGGLE MENU
+const initApp = () => {
+    const hamburgerBtn = document.getElementById('hamburger-button')
+    const mobileMenu = document.getElementById('mobile-menu')
 
-const navToggle = document.getElementById("nav-toggle"),
-    navMenu = document.getElementById("nav-menu");
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('hidden')
+        mobileMenu.classList.toggle('flex')
+    }
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("top-[-1000%]");
-    navMenu.classList.toggle("top-20");
-});
+    hamburgerBtn.addEventListener('click', toggleMenu)
+    mobileMenu.addEventListener('click', toggleMenu)
+}
+
+document.addEventListener('DOMContentLoaded', initApp)

@@ -21,32 +21,45 @@
 
 <body class="bg-[#FAFAFA] text-black-mamba">
     <!-- HEADER -->
-    <header class="container w-full mx-auto px-5 py-3 flex  justify-between items-center relative top-0 z-50 md:py-5 lg:px-10">
-        <div>
-            <a href="#"><img src="./assets/images/LOGO.png" alt="Rentind Academy" class="h-6 md:h-8 lg:h-10 xl:h-11 2xl:h-[52px]"></a>
-        </div>
-        <div class="hidden lg:flex items-center bg-white rounded-md lg:px-2 lg:py-3 lg:rounded-full xl:px-5 2xl:px-6 2xl:py-4">
-            <select name="" id="" class="outline-none mr-5 font-medium lg:text-sm lg:mr-3 xl:text-base 2xl:text-lg">
-                <option value="">All Categories</option>
-            </select>
-            <input type="text" placeholder="Try typing “spinach”" class="outline-none border-l-2 border-[#E6E6E6] pl-3 lg:text-sm lg:w-44 xl:text-base xl:w-full 2xl:text-lg">
-            <i class='bx bx-search text-[#9ca3af] lg:text-lg xl:text-xl 2xl:text-2xl'></i>
-        </div>
-        <nav>
-            <div class="absolute z-30 left-[50%] translate-x-[-50%] text-center shadow-md w-4/5 p-5 rounded-2xl transition duration-300 ease-in-out md:static md:text-left md:shadow-none md:w-fit md:p-0 md:translate-x-0 bg-white md:bg-[#FAFAFA] top-[-1000%]"
-                id="nav-menu">
-                <ul class="flex flex-col gap-y-4 font-medium md:flex-row md:gap-x-8 lg:gap-x-4 xl:font-semibold xl:gap-x-8 2xl:text-xl 2xl:gap-x-10">
+    <header class="container flex flex-col w-full mx-auto py-3 relative top-0 z-50 md:py-5 lg:px-10">
+        <section class="flex justify-between items-center px-5">
+            <div class="z-50">
+                <a href="#"><img src="./assets/images/LOGO.png" alt="Rentind Academy" class="h-6 md:h-8 lg:h-10 xl:h-11 2xl:h-[52px]"></a>
+            </div>
+            <div class="hidden lg:flex items-center bg-white rounded-md lg:px-2 lg:py-3 lg:rounded-full xl:px-5 2xl:px-6 2xl:py-4">
+                <select name="" id="" class="outline-none mr-5 font-medium lg:text-sm lg:mr-3 xl:text-base 2xl:text-lg">
+                    <option value="">All Categories</option>
+                </select>
+                <input type="text" placeholder="Try typing “spinach”" class="outline-none border-l-2 border-[#E6E6E6] pl-3 lg:text-sm lg:w-44 xl:text-base xl:w-full 2xl:text-lg">
+                <i class='bx bx-search text-[#9ca3af] lg:text-lg xl:text-xl 2xl:text-2xl'></i>
+            </div>
+            <nav>
+                <button id="hamburger-button" class="md:hidden text-xl cursor-pointer relative">
+                    &#9776
+                </button>
+                <ul class="hidden md:flex md:flex-row md:font-medium md:gap-x-8 lg:gap-x-4 xl:font-semibold xl:gap-x-8 2xl:text-xl 2xl:gap-x-10">
                     <li><a href="#">Explore</a></li>
                     <li><a href="#">Rents</a></li>
                     <li><a href="#">Sales</a></li>
                     <li><a href="#">How it work</a></li>
                     <li><a href="#" class="bg-[#efefef] rounded-full px-4 py-3 xl:px-5 xl:py-4 2xl:px-6 2xl:py-3">Contact Us</a></li>
                 </ul>
-            </div>
-            <div class="hover:cursor-pointer md:hidden" id="nav-toggle">
-                <i class='bx bx-menu text-2xl'></i>
-            </div>
-        </nav>
+            </nav>
+        </section>
+        <section id="mobile-menu" class="absolute hidden w-full top-1 bg-white flex-col items-center justify-center origin-top animate-open-menu self-center">
+            <button class="text-4xl self-end px-4">
+                &times;
+            </button>
+            <nav class="flex justify-center text-center shadow-md rounded-br-2xl rounded-bl-2xl w-full p-5 bg-white" aria-label="mobile">
+                <ul class="flex flex-col gap-y-4 font-medium">
+                    <li><a class="hover:text-gray-400 cursor-pointer" href="#">Explore</a></li>
+                    <li><a class="hover:text-gray-400 cursor-pointer" href="#">Rents</a></li>
+                    <li><a class="hover:text-gray-400 cursor-pointer" href="#">Sales</a></li>
+                    <li><a class="hover:text-gray-400 cursor-pointer" href="#">How it work</a></li>
+                    <li><a class="hover:text-gray-400 cursor-pointer" href="#" class="bg-[#efefef] rounded-full px-4 py-3">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <!-- MAIN -->
