@@ -15,15 +15,21 @@
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <style>
+        .toggle-btn {
+            @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+        }
+    </style>
+
     <!-- ICON -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="bg-[#FAFAFA] text-black-mamba">
     <!-- HEADER -->
-    <header class="container flex flex-col w-full mx-auto py-3 relative top-0 z-50 md:py-5 lg:px-10">
-        <section class="flex justify-between items-center px-5">
-            <div class="z-50">
+    <header class="container sticky bg-[#FAFAFA] flex flex-col w-full mx-auto py-3 top-0 z-50 md:relative md:py-5 lg:px-10">
+        <section class="flex justify-between items-center px-5 md:px-0">
+            <div>
                 <a href="#"><img src="./assets/images/LOGO.png" alt="Rentind Academy" class="h-6 md:h-8 lg:h-10 xl:h-11 2xl:h-[52px]"></a>
             </div>
             <div class="hidden lg:flex items-center bg-white rounded-md lg:px-2 lg:py-3 lg:rounded-full xl:px-5 2xl:px-6 2xl:py-4">
@@ -34,8 +40,10 @@
                 <i class='bx bx-search text-[#9ca3af] lg:text-lg xl:text-xl 2xl:text-2xl'></i>
             </div>
             <nav>
-                <button id="hamburger-button" class="md:hidden text-xl cursor-pointer relative">
-                    &#9776
+                <button id="hamburger-button" class="relative h-4 w-4 cursor-pointer text-3xl md:hidden">
+                    <div
+                    class="absolute top-2 -mt-2 h-[2px] w-4 rounded bg-black transition-all duration-500 before:absolute before:h-[2px] before:w-4 before:-translate-x-2 before:-translate-y-2 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[2px] after:w-4 after:-translate-x-2 after:translate-y-2 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+                    ></div>
                 </button>
                 <ul class="hidden md:flex md:flex-row md:font-medium md:gap-x-8 lg:gap-x-4 xl:font-semibold xl:gap-x-8 2xl:text-xl 2xl:gap-x-10">
                     <li><a href="#">Explore</a></li>
@@ -46,11 +54,8 @@
                 </ul>
             </nav>
         </section>
-        <section id="mobile-menu" class="absolute hidden w-full top-1 bg-white flex-col items-center justify-center origin-top animate-open-menu self-center">
-            <button class="text-4xl self-end px-4">
-                &times;
-            </button>
-            <nav class="flex justify-center text-center shadow-md rounded-br-2xl rounded-bl-2xl w-full p-5 bg-white" aria-label="mobile">
+        <section id="mobile-menu" class="absolute hidden w-4/5 top-16 bg-white flex-col items-center justify-center origin-top animate-open-menu self-center rounded-2xl">
+            <nav class="flex justify-center text-center shadow-md rounded-2xl w-full p-5 bg-white" aria-label="mobile">
                 <ul class="flex flex-col gap-y-4 font-medium">
                     <li><a class="hover:text-gray-400 cursor-pointer" href="#">Explore</a></li>
                     <li><a class="hover:text-gray-400 cursor-pointer" href="#">Rents</a></li>
